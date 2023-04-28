@@ -1,0 +1,23 @@
+# Monorepo
+apps/*/credentials.json
+apps/*/build
+packages/*/build
+
+# Turborepo
+.turbo
+
+# macOS
+.DS_Store
+
+# Node
+node_modules
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Xcode
+*.pbxuser
+!default.pbxuser
+*.xccheckout
+*.xcscmblueprint
+xcuserdata

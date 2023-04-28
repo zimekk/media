@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["src", "index.ts", "transformer.ts"]
+  // "extends": "tsconfig/react-native-library",
+  // "include": ["."],
+  // "exclude": ["dist", "build", "node_modules"],
+  // "compilerOptions": {
+  //   "strict": true
+  // }
+}

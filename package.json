@@ -1,0 +1,51 @@
+{
+  "private": true,
+  "name": "media",
+  "engines": {
+    "node": ">=v16.19.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "scripts": {
+    "dev": "turbo dev",
+    "dev:native": "turbo dev --filter=\"{./apps/native}...\"",
+    "dev:web": "turbo dev --filter=\"{./apps/web}...\"",
+    "lint": "turbo lint",
+    "test": "turbo test",
+    "build": "turbo build",
+    "build:native": "turbo build --filter=\"...{./apps/native}\"",
+    "build:web": "turbo build --filter=\"...{./apps/web}\"",
+    "prepare": "husky install"
+  },
+  "scripts-": {
+    "build": "turbo build",
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "turbo clean",
+    "db:generate": "turbo db:generate",
+    "db:push": "turbo db:push db:generate",
+    "dev": "turbo dev --parallel",
+    "dev:web": "turbo dev --filter @acme/nextjs",
+    "format": "prettier --write \"**/*.{js,cjs,mjs,ts,tsx,md,json}\" --ignore-path .gitignore",
+    "lint": "turbo lint && manypkg check",
+    "lint:fix": "turbo lint:fix && manypkg fix",
+    "type-check": "turbo type-check",
+    "update:latest": "pnpm -r up -i"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
+    "eslint": "^8.39.0",
+    "husky": "^8.0.3",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.8",
+    "pretty-quick": "^3.1.3",
+    "turbo": "^1.9.3",
+    "typescript": "^5.0.4"
+  }
+}
