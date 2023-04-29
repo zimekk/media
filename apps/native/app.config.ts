@@ -18,7 +18,7 @@ const defineConfig = (): ExpoConfig => ({
   },
   assetBundlePatterns: ["**/*"],
   ios: {
-    supportsTablet: true,
+    supportsTablet: false,
     bundleIdentifier: "io.github.zimekk.media",
   },
   android: {
@@ -29,7 +29,7 @@ const defineConfig = (): ExpoConfig => ({
   },
   extra: {
     eas: {
-      // projectId: "your-project-id",
+      projectId: "9e39153b-35ba-4ad4-8f74-b357bc981026",
     },
   },
   // plugins: ["./expo-plugins/with-modify-gradle.js"],
