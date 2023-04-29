@@ -1,18 +1,11 @@
 {
   "name": "@dev/hello",
   "version": "0.1.0",
-  "license": "MIT",
-  "main--": "./dist/index.js",
-  "types--": "./dist/index.d.ts",
+  "private": true,
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "pnpm lint --fix",
     "type-check": "tsc --noEmit"
-  },
-  "scripts-": {
-    "build-": "tsup src/index.tsx --format esm,cjs --dts --external react",
-    "dev-": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
-    "clean": "rm -rf dist"
   },
   "devDependencies": {
     "@types/react": "^18.2.0",
