@@ -1,0 +1,8 @@
+/apps/native
+/apps/*/node_modules
+/packages/*/node_modules
+/share
+.git
+.next
+node_modules
+npm-debug.log

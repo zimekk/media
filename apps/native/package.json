@@ -1,6 +1,5 @@
 {
-  "name": "@dev/native",
-  "version": "1.0.0",
+  "name": "native",
   "private": true,
   "eslintConfig": {
     "extends": "universe"

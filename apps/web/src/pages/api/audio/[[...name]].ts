@@ -4,8 +4,6 @@ import { createReadStream, statSync } from "fs";
 import { glob } from "glob";
 import { resolve } from "path";
 
-type Data = string[];
-
 const { INIT_CWD = "", SHARE_PATH = "../../share" } = process.env;
 
 const cwd = resolve(INIT_CWD, SHARE_PATH);

@@ -6,6 +6,9 @@ packages/*/build
 # Turborepo
 .turbo
 
+# env files
+.env
+
 # macOS
 .DS_Store
 

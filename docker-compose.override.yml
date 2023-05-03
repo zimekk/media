@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    environment:
+      - PORT
+    ports:
+      - $PORT:$PORT
+    volumes:
+      - ./share:/app/share
+    #   - /app/node_modules

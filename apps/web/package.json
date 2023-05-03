@@ -1,6 +1,5 @@
 {
-  "name": "@dev/web",
-  "version": "0.1.0",
+  "name": "web",
   "private": true,
   "eslintConfig": {
     "extends": "next"
