@@ -20,6 +20,9 @@ const defineConfig = (): ExpoConfig => ({
   ios: {
     supportsTablet: false,
     bundleIdentifier: "io.github.zimekk.media",
+    infoPlist: {
+      UIBackgroundModes: ["audio"],
+    },
   },
   android: {
     adaptiveIcon: {

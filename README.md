@@ -48,3 +48,8 @@ media % docker-compose up --build
 git fetch && git reset --hard origin
 docker-compose -f docker-compose.yml up --build -d && docker system prune -f
 ```
+
+```sh
+docker-compose logs -f --tail=25 app
+docker-compose exec app sh
+```
