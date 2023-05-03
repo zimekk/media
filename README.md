@@ -10,6 +10,7 @@ media % pnpm i
 
 ```sh
 media % pnpm dev
+media % pnpm dev:web
 ```
 
 ```sh
