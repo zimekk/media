@@ -1,5 +1,6 @@
 import Head from "next/head";
 
+import { Audio } from "@dev/audio";
 import { Hello } from "@dev/hello";
 
 export default function Web() {
@@ -12,6 +13,7 @@ export default function Web() {
       </Head>
       <main>
         <h1>Web</h1>
+        <Audio />
         <Hello />
       </main>
     </>

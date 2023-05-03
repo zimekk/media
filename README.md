@@ -3,17 +3,18 @@
 ## install
 
 ```sh
-pnpm i
+media % pnpm i
 ```
 
 ## dev
 
 ```sh
-pnpm dev
+media % pnpm dev
+media % pnpm dev:web
 ```
 
 ```sh
-curl http://localhost:3000 # <!DOCTYPE html>
+media % curl http://localhost:3000 # <!DOCTYPE html>
 ```
 
 ## native
