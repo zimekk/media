@@ -10,6 +10,14 @@ const cwd = resolve(INIT_CWD, SHARE_PATH);
 
 console.info(`Audio share path: ${cwd}`);
 
+// https://nextjs.org/docs/messages/api-routes-response-size-limit#possible-ways-to-fix-it
+export const config = {
+  api: {
+    responseLimit: false,
+    // responseLimit: '8mb',
+  },
+};
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse

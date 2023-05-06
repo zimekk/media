@@ -1,6 +1,8 @@
-import type { ExpoConfig } from "@expo/config";
+import type { ConfigContext, ExpoConfig } from "@expo/config";
 
-const defineConfig = (): ExpoConfig => ({
+// https://docs.expo.dev/workflow/configuration/#dynamic-configuration
+export default ({ config }: ConfigContext): ExpoConfig => ({
+  ...config,
   name: "Media",
   slug: "media",
   scheme: "expo",
@@ -37,5 +39,3 @@ const defineConfig = (): ExpoConfig => ({
   },
   // plugins: ["./expo-plugins/with-modify-gradle.js"],
 });
-
-export default defineConfig;

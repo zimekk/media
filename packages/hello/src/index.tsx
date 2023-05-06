@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
-// import { Text, View } from "react-native";
-
-const Text = 'div'
-const View = 'div'
+import { Text, View } from "react-native";
 
 function Loading() {
   return (
@@ -13,7 +10,7 @@ function Loading() {
 }
 
 // https://docs.expo.dev/guides/environment-variables/#using-babel-to-inline-environment-variables-during-build-time
-const { API_URL = '' } = process.env;
+const { API_URL = "" } = process.env;
 
 export function Hello() {
   const [data, setData] = useState<object | null>(null);
@@ -26,7 +23,7 @@ export function Hello() {
       })
       .catch(console.error);
   }, []);
-  
+
   if (data === null) return <Loading />;
 
   return (

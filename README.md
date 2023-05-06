@@ -28,6 +28,7 @@ media % curl http://localhost:3000 # <!DOCTYPE html>
 ```sh
 native % brew install ios-deploy
 native % pnpm dev:ios
+native % pnpm expo prebuild -p ios
 native % pnpm ios
 native % pnpm react-native build-ios --mode=Release --device
 ios % xcodebuild -list
