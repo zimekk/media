@@ -9,7 +9,7 @@ const config = {
   output: "standalone",
   reactStrictMode: true,
   /** Enables hot reloading for local packages without a build step */
-  transpilePackages: ["@dev/audio", "@dev/hello"],
+  transpilePackages: ["@dev/audio", "@dev/hello", "styled-components"],
   /** We already do linting and typechecking as separate tasks in CI */
   eslint: { ignoreDuringBuilds: !!process.env.CI },
   typescript: { ignoreBuildErrors: !!process.env.CI },

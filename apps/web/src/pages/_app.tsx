@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
+import StyledComponentsRegistry from "./registry";
 // import type { AppType } from "next/app";
 // import type { Session } from "next-auth";
 // import { SessionProvider } from "next-auth/react";
@@ -20,5 +21,9 @@ import type { AppProps } from "next/app";
 // export default api.withTRPC(MyApp);
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <StyledComponentsRegistry>
+      <Component {...pageProps} />
+    </StyledComponentsRegistry>
+  );
 }
