@@ -47,6 +47,12 @@ const Title = styled.Text`
   font-size: 16px;
 `;
 
+const StyledMain = styled.View`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`;
+
 export default function Web() {
   return (
     <>
@@ -55,14 +61,14 @@ export default function Web() {
         <meta name="description" content="" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1>Web</h1>
+      <StyledMain>
+        {/* <h1>Web</h1> */}
         {/* <Container>
         <Skeleton />
         <Skeleton />
         <Skeleton />
       </Container> */}
-        <h1 className="text-xl font-medium text-gray-400/80">
+        {/* <h1 className="text-xl font-medium text-gray-400/80">
           Styled with Styled Components
         </h1>
         <Container>
@@ -71,10 +77,10 @@ export default function Web() {
         <Text className="font-semibold italic text-white">Press on a post</Text>
         <View>
           <Text className="mt-4 text-lg">Text</Text>
-        </View>
+        </View> */}
         <Audio />
-        <Hello />
-      </main>
+        {/* <Hello /> */}
+      </StyledMain>
     </>
   );
 }

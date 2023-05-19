@@ -9,26 +9,25 @@ function Loading() {
   );
 }
 
-// https://docs.expo.dev/guides/environment-variables/#using-babel-to-inline-environment-variables-during-build-time
-const { API_URL = "" } = process.env;
+const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL || "";
 
 export function Hello() {
   const [data, setData] = useState<object | null>(null);
 
   useEffect(() => {
-    fetch(`${API_URL}/api/hello`)
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data);
-      })
-      .catch(console.error);
+    // fetch(`${NEXT_PUBLIC_API_URL}/api/hello`)
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     setData(data);
+    //   })
+    //   .catch(console.error);
   }, []);
 
   if (data === null) return <Loading />;
 
   return (
     <View>
-      <Text>{`API_URL: ${API_URL}`}</Text>
+      <Text>{`API_URL: ${NEXT_PUBLIC_API_URL}`}</Text>
       <Text>{JSON.stringify(data)}</Text>
     </View>
   );

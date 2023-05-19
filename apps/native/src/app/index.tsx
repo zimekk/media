@@ -20,9 +20,34 @@ const Title = styled.Text`
 
 export default function () {
   return (
-    <SafeAreaView className="bg-[#1F104A]">
+    <SafeAreaView
+      style={{
+        flex: 1,
+      }}
+    >
+      {/* <View style={{
+      flex: 1,
+      position: 'relative',
+      flexDirection: 'row'
+    }}>
+      <View style={{
+        flex: 1
+      }}>
+        <Text>1</Text>
+      </View>
+      <View style={{
+        flex: 1
+      }}>
+        <Text>2</Text>
+      </View>
+      </View> */}
+
       {/* Changes page title visible on the header */}
-      <Stack.Screen options={{ title: "Home Page" }} />
+      {/* <Stack.Screen options={{ title: "Home Page" }} /> */}
+      <Audio />
+      {/* <View style={{flex:1}}>
+        <Text className="mt-4 text-lg">Text</Text>
+      </View>
       <View className="h-full w-full p-4">
         <View className="py-2">
           <Text className="font-semibold italic text-white">
@@ -32,10 +57,9 @@ export default function () {
           <Container>
             <Title>Hello</Title>
           </Container>
-          <Audio />
-          {/* <Hello /> */}
+          <Hello />
         </View>
-      </View>
+      </View> */}
     </SafeAreaView>
   );
 }

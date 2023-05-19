@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 import { Audio } from "expo-av";
 
 export default function Player({ uri }: { uri: string }) {
@@ -39,12 +39,22 @@ export default function Player({ uri }: { uri: string }) {
       : undefined;
   }, [sound]);
 
+  useEffect(() => {
+    if (uri) {
+      play();
+    }
+  }, [uri]);
+
   return (
     <View>
       {playing ? (
-        <Button title="Pause" onPress={pause} />
+        <TouchableOpacity onPress={pause}>
+          <Text>Pause</Text>
+        </TouchableOpacity>
       ) : (
-        <Button title="Play" onPress={play} />
+        <TouchableOpacity onPress={play}>
+          <Text>Play</Text>
+        </TouchableOpacity>
       )}
     </View>
   );
