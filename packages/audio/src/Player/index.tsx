@@ -1,61 +1,66 @@
-import { useEffect, useState } from "react";
-import { Text, TouchableOpacity, View } from "react-native";
-import { Audio } from "expo-av";
+import { Image, Text, Pressable, View } from "react-native";
+import styled from "styled-components/native";
 
-export default function Player({ uri }: { uri: string }) {
-  // https://docs.expo.dev/versions/latest/sdk/audio/#playing-sounds
-  const [sound, setSound] = useState<Audio.Sound>();
-  const [playing, setPlaying] = useState(false);
+import { usePlayer } from "./hooks";
 
-  async function play() {
-    try {
-      console.log("Requesting permissions..");
-      // await Audio.requestPermissionsAsync();
-      await Audio.setAudioModeAsync({ playsInSilentModeIOS: true });
-      console.log("Loading Sound");
-      const { sound } = await Audio.Sound.createAsync({ uri });
-      setSound(sound);
+const URI_SLASH = "%2F";
+const getImgUri = (uri: string) =>
+  ((m) => m.slice(0, m.length - 1).concat("cover.jpg"))(
+    uri.split(URI_SLASH)
+  ).join(URI_SLASH);
 
-      console.log("Playing Sound");
-      await sound.playAsync();
-      setPlaying(true);
-    } catch (err) {
-      console.error("Failed to start recording", err);
-    }
-  }
-  async function pause() {
-    if (sound) {
-      setPlaying(false);
-      sound.pauseAsync();
-    }
-  }
+const StyledButton = styled.View``;
 
-  useEffect(() => {
-    return sound
-      ? () => {
-          console.log("Unloading Sound");
-          sound.unloadAsync();
-        }
-      : undefined;
-  }, [sound]);
-
-  useEffect(() => {
-    if (uri) {
-      play();
-    }
-  }, [uri]);
+export default function Player({
+  uri,
+  loop = true,
+}: {
+  uri: string;
+  loop?: boolean;
+}) {
+  const { playing, play, pause, ref } = usePlayer({ uri });
 
   return (
-    <View>
-      {playing ? (
-        <TouchableOpacity onPress={pause}>
-          <Text>Pause</Text>
-        </TouchableOpacity>
-      ) : (
-        <TouchableOpacity onPress={play}>
-          <Text>Play</Text>
-        </TouchableOpacity>
-      )}
+    <View
+      style={{
+        display: "flex",
+        flexDirection: "row",
+      }}
+    >
+      <View
+        style={{
+          backgroundColor: "green",
+          padding: 10,
+        }}
+      >
+        <Image
+          source={{
+            uri: getImgUri(uri),
+            width: 100,
+            height: 100,
+          }}
+          style={{}}
+        />
+      </View>
+      <View
+        style={{
+          flex: 1,
+          backgroundColor: "red",
+        }}
+      >
+        <StyledButton>
+          {playing ? (
+            <Pressable onPress={pause}>
+              <Text>Pause</Text>
+            </Pressable>
+          ) : (
+            <Pressable onPress={play}>
+              <Text>Play</Text>
+            </Pressable>
+          )}
+        </StyledButton>
+        {ref && <audio ref={ref} src={uri} loop={loop} autoPlay controls />}
+      </View>
     </View>
   );
 }
