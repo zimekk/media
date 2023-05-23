@@ -35,7 +35,6 @@ export function Audio() {
             backgroundColor: "yellow",
           }}
         >
-          <Text>1</Text>
           <Playlist href={href} setHref={setHref} />
         </View>
         <View
@@ -43,7 +42,6 @@ export function Audio() {
             backgroundColor: "orange",
           }}
         >
-          <Text>2</Text>
           {href && <Player key={href} uri={href} />}
         </View>
       </View>

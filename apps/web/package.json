@@ -26,6 +26,7 @@
     "@dev/hello": "^0.1.0",
     "glob": "^10.2.5",
     "mime-types": "^2.1.35",
+    "music-metadata": "^8.1.4",
     "next": "^13.4.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

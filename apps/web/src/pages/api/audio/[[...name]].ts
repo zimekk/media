@@ -4,6 +4,7 @@ import { createReadStream, statSync } from "node:fs";
 import { resolve } from "node:path";
 import { glob } from "glob";
 import mime from "mime-types";
+import { parseFile } from "music-metadata";
 
 const { INIT_CWD = "", SHARE_PATH = "../../share" } = process.env;
 
@@ -51,10 +52,40 @@ export default async function handler(
       res.status(isNaN(start) ? 200 : 206)
     );
   } else {
-    res.status(200).json(
-      await glob("**/*.{flac,mp3,wav}", {
-        cwd,
-      })
-    );
+    const list = await glob("**/*.{flac,mp3,wav}", {
+      cwd,
+    });
+
+    // const encoding = "base64";
+
+    list
+      .reduce(
+        (promise, name) =>
+          promise.then((list) =>
+            parseFile(`${cwd}/${name}`).then(
+              ({
+                common: { year, album, title, artists, picture },
+                format: { duration },
+              }) =>
+                list.concat({
+                  name,
+                  year,
+                  title,
+                  album,
+                  artists,
+                  // picture2: picture?.map(
+                  //   ({ format, data }) =>
+                  //     `data:${format};${encoding},${data.toString(encoding)}`
+                  // ),
+                  picture: picture?.map(({ format, data }) =>
+                    URL.createObjectURL(new Blob([data], { type: format }))
+                  ),
+                  duration,
+                })
+            )
+          ),
+        Promise.resolve([]) as Promise<any>
+      )
+      .then((data) => res.status(200).json(data));
   }
 }
