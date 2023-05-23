@@ -1,7 +1,11 @@
 import { Image, Text, Pressable, View } from "react-native";
+import dayjs from "dayjs";
+import duration from "dayjs/plugin/duration";
 import styled from "styled-components/native";
 
 import { usePlayer } from "./hooks";
+
+dayjs.extend(duration);
 
 const URI_SLASH = "%2F";
 const getImgUri = (uri: string) =>
@@ -18,7 +22,9 @@ export default function Player({
   uri: string;
   loop?: boolean;
 }) {
-  const { playing, play, pause, ref } = usePlayer({ uri });
+  const { playing, play, pause, ref, currentTime, duration } = usePlayer({
+    uri,
+  });
 
   return (
     <View
@@ -48,18 +54,52 @@ export default function Player({
           backgroundColor: "red",
         }}
       >
-        <StyledButton>
-          {playing ? (
-            <Pressable onPress={pause}>
-              <Text>Pause</Text>
-            </Pressable>
-          ) : (
-            <Pressable onPress={play}>
-              <Text>Play</Text>
-            </Pressable>
-          )}
-        </StyledButton>
-        {ref && <audio ref={ref} src={uri} loop={loop} autoPlay controls />}
+        <View
+          style={{
+            flex: 1,
+          }}
+        >
+          <StyledButton>
+            {playing ? (
+              <Pressable onPress={pause}>
+                <Text>Pause</Text>
+              </Pressable>
+            ) : (
+              <Pressable onPress={play}>
+                <Text>Play</Text>
+              </Pressable>
+            )}
+          </StyledButton>
+          {ref && <audio ref={ref} src={uri} loop={loop} autoPlay controls />}
+        </View>
+        {duration > 0 && (
+          <View
+            style={{
+              position: "relative",
+              backgroundColor: "blue",
+            }}
+          >
+            <View
+              style={{
+                position: "absolute",
+                backgroundColor: "violet",
+                left: `${0}%`,
+                right: `${100 - (100 * currentTime) / duration}%`,
+                top: 5,
+                bottom: 5,
+              }}
+            ></View>
+            <Text
+              style={{
+                height: 24,
+              }}
+            >{`${dayjs
+              .duration(currentTime, "seconds")
+              .format("m:ss")} / ${dayjs
+              .duration(duration, "seconds")
+              .format("m:ss")}`}</Text>
+          </View>
+        )}
       </View>
     </View>
   );

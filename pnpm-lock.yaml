@@ -227,6 +227,10 @@ importers:
         version: 3.21.4
 
   packages/audio:
+    dependencies:
+      dayjs:
+        specifier: ^1.11.7
+        version: 1.11.7
     devDependencies:
       '@types/react':
         specifier: ^18.2.6
