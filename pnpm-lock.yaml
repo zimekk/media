@@ -108,8 +108,8 @@ importers:
         specifier: ~3.21.0
         version: 3.21.0(react-native@0.71.11)(react@18.2.0)
       styled-components:
-        specifier: 6.0.7
-        version: 6.0.7(babel-plugin-styled-components@2.1.3)(react-dom@18.2.0)(react@18.2.0)
+        specifier: 6.0.8
+        version: 6.0.8(babel-plugin-styled-components@2.1.3)(react-dom@18.2.0)(react@18.2.0)
       suspend-react:
         specifier: ^0.1.0
         version: 0.1.0(react@18.2.0)
@@ -210,7 +210,7 @@ importers:
         version: 0.19.4
       babel-plugin-styled-components:
         specifier: ^2.1.3
-        version: 2.1.3(styled-components@6.0.7)
+        version: 2.1.3(styled-components@6.0.8)
       eslint-config-next:
         specifier: ^13.4.3
         version: 13.4.3(eslint@8.40.0)(typescript@5.0.4)
@@ -221,8 +221,8 @@ importers:
         specifier: ^8.4.23
         version: 8.4.23
       styled-components:
-        specifier: 6.0.7
-        version: 6.0.7(babel-plugin-styled-components@2.1.3)(react-dom@18.2.0)(react@18.2.0)
+        specifier: 6.0.8
+        version: 6.0.8(babel-plugin-styled-components@2.1.3)(react-dom@18.2.0)(react@18.2.0)
       tailwindcss:
         specifier: ^3.3.2
         version: 3.3.2(ts-node@10.9.1)
@@ -603,6 +603,7 @@ packages:
   /@babel/plugin-proposal-class-properties@7.18.6(@babel/core@7.21.8):
     resolution: {integrity: sha512-cumfXOF0+nzZrrN8Rf0t7M+tF6sZc7vhQwYQck9q1/5w2OExlD+b4v4RpMJFaV1Z7WcDRgO6FqvxqxGlwo+RHQ==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
@@ -715,6 +716,7 @@ packages:
   /@babel/plugin-proposal-object-rest-spread@7.20.7(@babel/core@7.21.8):
     resolution: {integrity: sha512-d2S98yCiLxDVmBmE8UjGcfPvNEUbA1U5q5WxaWFUGRzJSVAZqm5W6MbPct0jxnegUZ0niLeNX+IOzEs7wYg9Dg==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-object-rest-spread instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
@@ -4025,7 +4027,7 @@ packages:
     resolution: {integrity: sha512-Lw1Op21cUgon94L00m2uHHHiuO8LiCorNAgatT6mVsdgF6ft925MK7VpvF/CLHqtmSIQF0d3AxerZ0Ud8jG2Fg==}
     dev: true
 
-  /babel-plugin-styled-components@2.1.3(styled-components@6.0.7):
+  /babel-plugin-styled-components@2.1.3(styled-components@6.0.8):
     resolution: {integrity: sha512-jBioLwBVHpOMU4NsueH/ADcHrjS0Y/WTpt2eGVmmuSFNEv2DF3XhcMncuZlbbjxQ4vzxg+yEr6E6TNjrIQbsJQ==}
     peerDependencies:
       styled-components: '>= 2'
@@ -4035,7 +4037,7 @@ packages:
       babel-plugin-syntax-jsx: 6.18.0
       lodash: 4.17.21
       picomatch: 2.3.1
-      styled-components: 6.0.7(babel-plugin-styled-components@2.1.3)(react-dom@18.2.0)(react@18.2.0)
+      styled-components: 6.0.8(babel-plugin-styled-components@2.1.3)(react-dom@18.2.0)(react@18.2.0)
 
   /babel-plugin-syntax-jsx@6.18.0:
     resolution: {integrity: sha512-qrPaCSo9c8RHNRHIotaufGbuOBN8rtdC4QrrFFc43vyWCCz7Kl7GL1PGaXtMGQZUXrkCjNEgxDfmAuAabr/rlw==}
@@ -11315,8 +11317,8 @@ packages:
     resolution: {integrity: sha512-0MP/Cxx5SzeeZ10p/bZI0S6MpgD+yxAhi1BOQ34jgnMXsCq3j1t6tQnZu+KdlL7dvJTLT3g9xN8tl10TqgFMcg==}
     dev: false
 
-  /styled-components@6.0.7(babel-plugin-styled-components@2.1.3)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-xIwWuiRMYR43mskVsW9MGTRjSo7ol4bcVjT595fGUp3OLBJOlOgaiKaxsHdC4a2HqWKqKnh0CmcRbk5ogyDjTg==}
+  /styled-components@6.0.8(babel-plugin-styled-components@2.1.3)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-AwI02MTWZwqjzfXgR5QcbmcSn5xVjY4N2TLjSuYnmuBGF3y7GicHz3ysbpUq2EMJP5M8/Nc22vcmF3V3WNZDFA==}
     engines: {node: '>= 16'}
     peerDependencies:
       babel-plugin-styled-components: '>= 2'
@@ -11339,7 +11341,7 @@ packages:
       '@emotion/is-prop-valid': 1.2.1
       '@emotion/unitless': 0.8.1
       '@types/stylis': 4.2.0
-      babel-plugin-styled-components: 2.1.3(styled-components@6.0.7)
+      babel-plugin-styled-components: 2.1.3(styled-components@6.0.8)
       css-to-react-native: 3.2.0
       csstype: 3.1.2
       postcss: 8.4.23
