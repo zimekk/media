@@ -40,7 +40,7 @@ importers:
         version: 4.0.0(eslint@8.40.0)
       husky:
         specifier: ^9.0.0
-        version: 9.0.5
+        version: 9.0.11
       jest:
         specifier: ^29.5.0
         version: 29.5.0(@types/node@18.16.13)(ts-node@10.9.1)
@@ -8549,8 +8549,8 @@ packages:
     engines: {node: '>=10.17.0'}
     dev: false
 
-  /husky@9.0.5:
-    resolution: {integrity: sha512-/EX48XLor4FczjgdJjwK4qMETrJxJqF4rkgo+NUeK8b2F4TV6s5QxAuG2JZfxm4b9WnrgBGS7bA/JK+H5CKg+A==}
+  /husky@9.0.11:
+    resolution: {integrity: sha512-AB6lFlbwwyIqMdHYhwPe+kjOC3Oc5P3nThEoW/AaO2BX3vJDjWPFxYLxokUZOo6RNX20He3AaT8sESs9NJcmEw==}
     engines: {node: '>=18'}
     hasBin: true
     dev: false
