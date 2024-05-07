@@ -91,9 +91,5 @@
     "pretty-quick": "^4.0.0",
     "turbo": "^1.9.8",
     "typescript": "^5.0.4"
-  },
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  }
 }

@@ -22,8 +22,8 @@
     "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
-    "@dev/audio": "^0.1.0",
-    "@dev/hello": "^0.1.0",
+    "@dev/audio": "workspace:*",
+    "@dev/hello": "workspace:*",
     "glob": "^10.2.5",
     "mime-types": "^2.1.35",
     "music-metadata": "^8.1.4",

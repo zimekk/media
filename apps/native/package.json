@@ -22,8 +22,8 @@
     "xed": "xed -b ios"
   },
   "dependencies": {
-    "@dev/audio": "^0.1.0",
-    "@dev/hello": "^0.1.0",
+    "@dev/audio": "workspace:*",
+    "@dev/hello": "workspace:*",
     "@expo/metro-config": "^0.17.0",
     "expo": "~49.0.0",
     "expo-av": "~13.10.0",
