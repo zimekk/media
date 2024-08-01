@@ -24,7 +24,7 @@
   "dependencies": {
     "@dev/audio": "workspace:*",
     "@dev/hello": "workspace:*",
-    "glob": "^10.2.5",
+    "glob": "^11.0.0",
     "mime-types": "^2.1.35",
     "music-metadata": "^8.1.4",
     "next": "^14.0.0",
