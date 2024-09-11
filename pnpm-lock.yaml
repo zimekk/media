@@ -108,8 +108,8 @@ importers:
         specifier: ~3.31.0
         version: 3.31.1(react-native@0.72.6(@babel/core@7.24.6)(@babel/preset-env@7.24.6(@babel/core@7.24.6))(react@18.3.1))(react@18.3.1)
       styled-components:
-        specifier: 6.1.12
-        version: 6.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 6.1.13
+        version: 6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       suspend-react:
         specifier: ^0.1.0
         version: 0.1.3(react@18.3.1)
@@ -210,7 +210,7 @@ importers:
         version: 0.19.11
       babel-plugin-styled-components:
         specifier: ^2.1.3
-        version: 2.1.4(@babel/core@7.24.6)(styled-components@6.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+        version: 2.1.4(@babel/core@7.24.6)(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       eslint-config-next:
         specifier: ^14.0.0
         version: 14.2.5(eslint@9.4.0)(typescript@5.5.4)
@@ -221,8 +221,8 @@ importers:
         specifier: ^8.4.23
         version: 8.4.45
       styled-components:
-        specifier: 6.1.12
-        version: 6.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 6.1.13
+        version: 6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       tailwindcss:
         specifier: ^3.3.2
         version: 3.4.7
@@ -5684,8 +5684,8 @@ packages:
   structured-headers@0.4.1:
     resolution: {integrity: sha512-0MP/Cxx5SzeeZ10p/bZI0S6MpgD+yxAhi1BOQ34jgnMXsCq3j1t6tQnZu+KdlL7dvJTLT3g9xN8tl10TqgFMcg==}
 
-  styled-components@6.1.12:
-    resolution: {integrity: sha512-n/O4PzRPhbYI0k1vKKayfti3C/IGcPf+DqcrOB7O/ab9x4u/zjqraneT5N45+sIe87cxrCApXM8Bna7NYxwoTA==}
+  styled-components@6.1.13:
+    resolution: {integrity: sha512-M0+N2xSnAtwcVAQeFEsGWFFxXDftHUD7XrKla06QbpUMmbmtFBMMTcKWvFXtWxuD5qQkB8iU5gk6QASlx2ZRMw==}
     engines: {node: '>= 16'}
     peerDependencies:
       react: '>= 16.8.0'
@@ -7552,7 +7552,7 @@ snapshots:
       rimraf: 2.7.1
       sudo-prompt: 8.2.5
       tmp: 0.0.33
-      tslib: 2.6.2
+      tslib: 2.6.3
     transitivePeerDependencies:
       - supports-color
 
@@ -9073,14 +9073,14 @@ snapshots:
 
   babel-plugin-react-native-web@0.19.11: {}
 
-  babel-plugin-styled-components@2.1.4(@babel/core@7.24.6)(styled-components@6.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+  babel-plugin-styled-components@2.1.4(@babel/core@7.24.6)(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
     dependencies:
       '@babel/helper-annotate-as-pure': 7.22.5
       '@babel/helper-module-imports': 7.24.3
       '@babel/plugin-syntax-jsx': 7.24.1(@babel/core@7.24.6)
       lodash: 4.17.21
       picomatch: 2.3.1
-      styled-components: 6.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      styled-components: 6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
       - '@babel/core'
 
@@ -10747,7 +10747,7 @@ snapshots:
   graphql-tag@2.12.6(graphql@15.8.0):
     dependencies:
       graphql: 15.8.0
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   graphql@15.8.0: {}
 
@@ -13255,7 +13255,7 @@ snapshots:
 
   structured-headers@0.4.1: {}
 
-  styled-components@6.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@emotion/is-prop-valid': 1.2.2
       '@emotion/unitless': 0.8.1
@@ -13332,7 +13332,7 @@ snapshots:
   synckit@0.8.8:
     dependencies:
       '@pkgr/core': 0.1.1
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   synckit@0.9.1:
     dependencies:
