@@ -134,7 +134,7 @@ importers:
         version: 22.17.1
       '@types/react':
         specifier: ^18.2.6
-        version: 18.3.23
+        version: 18.3.27
       '@types/webpack-env':
         specifier: ^1.18.0
         version: 1.18.8
@@ -198,10 +198,10 @@ importers:
         version: 22.17.1
       '@types/react':
         specifier: ^18.2.6
-        version: 18.3.23
+        version: 18.3.27
       '@types/react-dom':
         specifier: ^18.2.4
-        version: 18.3.7(@types/react@18.3.23)
+        version: 18.3.7(@types/react@18.3.27)
       autoprefixer:
         specifier: ^10.4.14
         version: 10.4.21(postcss@8.5.6)
@@ -241,7 +241,7 @@ importers:
     devDependencies:
       '@types/react':
         specifier: ^18.2.6
-        version: 18.3.23
+        version: 18.3.27
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -250,7 +250,7 @@ importers:
     devDependencies:
       '@types/react':
         specifier: ^18.2.6
-        version: 18.3.23
+        version: 18.3.27
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -1967,8 +1967,8 @@ packages:
     peerDependencies:
       '@types/react': ^18.0.0
 
-  '@types/react@18.3.23':
-    resolution: {integrity: sha512-/LDXMQh55EzZQ0uVAZmKKhfENivEvWz6E+EYzh+/MCjMhNsotd+ZHhBGIjFDTi6+fz0OhQQQLbTgdQIxxCsC0w==}
+  '@types/react@18.3.27':
+    resolution: {integrity: sha512-cisd7gxkzjBKU2GgdYrTdtQx1SORymWyaAFhaxQPK9bYO9ot3Y5OikQRvY0VYQtvwjeQnizCINJAenh/V7MK2w==}
 
   '@types/semver@7.5.8':
     resolution: {integrity: sha512-I8EUhyrgfLrcTkzV3TSsGyl1tSuPrEDzr0yd5m90UgNxQkyDXULk3b6MlQqTCpZpNtWe1K0hzclnZkTcLBe2UQ==}
@@ -3001,6 +3001,9 @@ packages:
 
   csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+
+  csstype@3.2.3:
+    resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
   dag-map@1.0.2:
     resolution: {integrity: sha512-+LSAiGFwQ9dRnRdOeaj7g47ZFJcOUPukAP8J3A3fuZ1g9Y44BG+P1sgApjLXTQPOzC4+7S9Wr8kXsfpINM4jpw==}
@@ -9408,14 +9411,14 @@ snapshots:
 
   '@types/prop-types@15.7.15': {}
 
-  '@types/react-dom@18.3.7(@types/react@18.3.23)':
+  '@types/react-dom@18.3.7(@types/react@18.3.27)':
     dependencies:
-      '@types/react': 18.3.23
+      '@types/react': 18.3.27
 
-  '@types/react@18.3.23':
+  '@types/react@18.3.27':
     dependencies:
       '@types/prop-types': 15.7.15
-      csstype: 3.1.3
+      csstype: 3.2.3
 
   '@types/semver@7.5.8': {}
 
@@ -10633,6 +10636,8 @@ snapshots:
   cssesc@3.0.0: {}
 
   csstype@3.1.3: {}
+
+  csstype@3.2.3: {}
 
   dag-map@1.0.2: {}
 
