@@ -1,4 +1,4 @@
-ARG BASE=node:22.21-alpine
+ARG BASE=node:24.11-alpine
 FROM $BASE AS builder
 # RUN apk add --no-cache tree
 # RUN apk add --no-cache libc6-compat
