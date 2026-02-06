@@ -146,7 +146,7 @@ importers:
         version: 0.4.4
       dotenv:
         specifier: ^17.0.0
-        version: 17.2.3
+        version: 17.2.4
       eslint-config-universe:
         specifier: ^12.0.0
         version: 12.1.0(eslint@9.39.2(jiti@1.21.7))(prettier@3.8.1)(typescript@5.9.3)
@@ -3108,8 +3108,8 @@ packages:
     resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
     engines: {node: '>=12'}
 
-  dotenv@17.2.3:
-    resolution: {integrity: sha512-JVUnt+DUIzu87TABbhPmNfVdBDt18BLOWjMUFJMSi/Qqg7NTYtabbvSNJGOJ7afbRuv9D/lngizHtP7QyLQ+9w==}
+  dotenv@17.2.4:
+    resolution: {integrity: sha512-mudtfb4zRB4bVvdj0xRo+e6duH1csJRM8IukBqfTRvHotn9+LBXB8ynAidP9zHqoRC/fsllXgk4kCKlR21fIhw==}
     engines: {node: '>=12'}
 
   dunder-proto@1.0.1:
@@ -10499,7 +10499,7 @@ snapshots:
 
   dotenv@16.4.7: {}
 
-  dotenv@17.2.3: {}
+  dotenv@17.2.4: {}
 
   dunder-proto@1.0.1:
     dependencies:
