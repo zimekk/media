@@ -207,7 +207,7 @@ importers:
         version: 10.4.24(postcss@8.5.6)
       babel-plugin-react-native-web:
         specifier: ^0.21.0
-        version: 0.21.2
+        version: 0.21.3
       babel-plugin-styled-components:
         specifier: ^2.1.3
         version: 2.1.4(@babel/core@7.29.7(supports-color@8.1.1))(styled-components@6.3.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
@@ -2766,8 +2766,8 @@ packages:
   babel-plugin-react-native-web@0.19.13:
     resolution: {integrity: sha512-4hHoto6xaN23LCyZgL9LJZc3olmAxd7b6jDzlZnKXAh4rRAbZRKNBJoOOdp46OBqgy+K0t0guTj5/mhA8inymQ==}
 
-  babel-plugin-react-native-web@0.21.2:
-    resolution: {integrity: sha512-SPD0J6qjJn8231i0HZhlAGH6NORe+QvRSQM2mwQEzJ2Fb3E4ruWTiiicPlHjmeWShDXLcvoorOCXjeR7k/lyWA==}
+  babel-plugin-react-native-web@0.21.3:
+    resolution: {integrity: sha512-e4fG8NbyRvk5GwU/7G2U9WxzPYtpC4IQN28AyRDzKE0kvywgohq8vT2x0/xBfg8a0RfSkXLlHAtUAGlSy3VhAw==}
 
   babel-plugin-styled-components@2.1.4:
     resolution: {integrity: sha512-Xgp9g+A/cG47sUyRwwYxGM4bR/jDRg5N6it/8+HxCnbT5XNKSKDT9xm4oag/osgqjC2It/vH0yXsomOG6k558g==}
@@ -10460,7 +10460,7 @@ snapshots:
 
   babel-plugin-react-native-web@0.19.13: {}
 
-  babel-plugin-react-native-web@0.21.2: {}
+  babel-plugin-react-native-web@0.21.3: {}
 
   babel-plugin-styled-components@2.1.4(@babel/core@7.29.7(supports-color@8.1.1))(styled-components@6.3.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
     dependencies:
