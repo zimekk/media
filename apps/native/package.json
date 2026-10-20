@@ -42,9 +42,9 @@
     "suspend-react": "^0.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.8",
-    "@babel/preset-env": "^7.21.5",
-    "@babel/runtime": "^7.21.5",
+    "@babel/core": "^8.0.0",
+    "@babel/preset-env": "^8.0.0",
+    "@babel/runtime": "^8.0.0",
     "@expo/config-plugins": "^8.0.0",
     "@types/babel__core": "^7.20.0",
     "@types/node": "^24.0.0",
